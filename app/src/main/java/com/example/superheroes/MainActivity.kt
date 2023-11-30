@@ -15,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.superheroes.model.HeroesRepository
-import com.example.superheroes.model.HeroesRepository.heroes
 import com.example.superheroes.ui.theme.SuperheroesTheme
 
 class MainActivity : ComponentActivity() {
@@ -45,7 +44,7 @@ fun HeroesApp() {
         }
     ) {
         val heroes = HeroesRepository.heroes
-        HeroesList(heroes = heroes, contentPadding = it)
+        HeroList(heroes = heroes, contentPadding = it)
     }
 }
 
